@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F5F7FA"
+    tools:context=".MainActivity">
+
+    <!-- Login Form Container -->
+    <RelativeLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/appLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/app_logo"
+            android:padding="8dp"
+            android:contentDescription="App Logo" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Welcome Back!"
+            android:textColor="#1A202C"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <EditText
+            android:id="@+id/usernameEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/titleText"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Username"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#1A202C"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/usernameEt"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#1A202C" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:text="Forgot Password?"
+            android:textColor="#4299E1"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/forgotPasswordTv"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#2B6CB0"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            app:cornerRadius="8dp" />
+
+    </RelativeLayout>
+
+    <!-- Profile Card Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="32dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/user_avatar"
+                android:scaleType="centerCrop"
+                android:contentDescription="User Avatar" />
+
+            <TextView
+                android:id="@+id/profileNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avatarIv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text="Administrator"
+                android:textColor="#2D3748"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/profileEmailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileNameTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="admin@system.com"
+                android:textColor="#718096"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/profileEmailTv"
+                android:layout_marginTop="20dp"
+                android:background="#E2E8F0" />
+
+            <TextView
+                android:id="@+id/profileBioTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="System Architect and DevOp enthusiast. Coffee consumer and Kotlin lover."
+                android:textColor="#4A5568"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4sp" />
+
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/profileBioTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#F56565"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                app:cornerRadius="8dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ProgressBar
+        android:id="@+id/loadingPb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />adm
+
+</RelativeLayout>
