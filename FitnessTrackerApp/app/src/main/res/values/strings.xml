@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FitnessTrackerApp</string>
+    <string name="dashboard_title">My Fitness Dashboard</string>
+    <string name="goal_progress">Today\'s Goal Progress</string>
+    <string name="update_stats">Update Daily Stats</string>
+    <string name="steps_label">Steps Walked</string>
+    <string name="calories_label">Calories Burned</string>
+    <string name="water_label">Water Intake (L)</string>
+    <string name="workout_label">Workout Time (min)</string>
+    <string name="motivational_quote">“The only bad workout is the one that didn\'t happen.”</string>
+</resources>
