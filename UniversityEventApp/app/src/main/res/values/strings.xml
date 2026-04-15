@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">University Event App</string>
+    <string name="welcome_student">Welcome, Mohsin</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="browse_events">Browse Events</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="featured_event">Featured Event</string>
+    <string name="register_now">Register Now</string>
+    <string name="search_events">Search events...</string>
+    <string name="all">All</string>
+    <string name="tech">Tech</string>
+    <string name="sports">Sports</string>
+    <string name="cultural">Cultural</string>
+    <string name="academic">Academic</string>
+    <string name="social">Social</string>
+    <string name="event_details">Event Details</string>
+    <string name="speakers">Speakers</string>
+    <string name="gallery">Gallery</string>
+    <string name="book_seats">Book Seats</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="available_seats">Available</string>
+    <string name="booked_seats">Booked</string>
+    <string name="selected_seats">Selected</string>
+</resources>
